@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>Security system</title>
+    <head>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel = "stylesheet" type = "text/css"href = "css/myStyle.css" />
+
+
+
+      <style>
+        * {
+          margin: 0px;
+          padding: 0px;
+        }
+        #Map{
+          height:500px;
+          width:100%;
+        }
+
+      </style>
+
+    </head>
+
+    <body>
+
+      <!-- Dropdown Structure -->
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">Users</a></li>
+                <li><a href="#!"></a></li>
+                <li class="divider"></li>
+                <li><a href="#">three</a></li>
+              </ul>
+              <nav>
+
+                <div class="nav-wrapper indigo lighten-1">
+                  <ul class="left hide-on-med-and-down">
+                    <a><li><a class="dropdown-trigger" href="#!" data-beloworigin="true" data-activates='dropdown1'><i class="material-icons left">menu</i></a></li>
+
+                  </ul>
+
+
+                    <ul class="right hide-on-med-and-down">
+
+                    <li><a href="cases.html">Cases</a></li>
+                    <li><a href="track.html">Track-Location</a></li>
+                    <li><a href="users.html">Citizens</a></li>
+
+                    <a href="#!" class="brand-logo"/>
+                  </ul>
+                </div>
+              </nav>
+
+
+        <div id="Map">
+         </div>
+
+  <script>
+        function initMap() {
+  // The location of Uluru
+  var location = {lat: 0.051184, lng: 32.463707};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('Map'), {zoom: 4, center: location});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: location, map: map});
+}
+</script>
+    <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoy9q4tSEiorWYDKLbNMNJyCs_HPxgzrU&callback=initMap">
+       </script>
+
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+      <script>
+      $( document ).ready(function(e){
+        $(".button-collapse").sidenav();
+        $(".dropdown-trigger").dropdown();});
+      </script>
+
+    </body>
+  </html>

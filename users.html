@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>Security system</title>
+    <head>
+      <!--Import Google Icon Font-->
+      <!--Import Google Icon Font-->
+            <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <!--Import materialize.css-->
+            <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+            <!--Let browser know website is optimized for mobile-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+
+    <body>
+      <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+      <nav>
+        <div class="nav-wrapper indigo lighten-1">
+          <ul class="left hide-on-med-and-down">
+            <li><a class="dropdown-trigger" href="#!" data-beloworigin="true" data-activates='dropdown1'>Citizens<i class="material-icons left">people</i></a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+  <li>
+<input type="text" placeholder="Search.." name="search"></li>
+<li><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">search</i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cases.html">Cases</a></li>
+            <li><a href="track.html">Track-Location</a></li>
+
+          </ul>
+        </div>
+      </nav>
+
+<table class="centered">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">NiN</th>
+      <th scope="col">Number</th>
+      <th scope="col">Location</th>
+    </tr>
+  </thead>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ <script type="text/javascript" src="js/materialize.min.js"></script>
+ <script>
+ $( document ).ready(function(e){
+   $(".button-collapse").sidenav();
+   $(".dropdown-trigger").dropdown();});
+ </script>
+    </body>
+  </html>
